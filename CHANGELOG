@@ -2,6 +2,14 @@
 
 # Version 1.0.0
 
-- Initial version.
-.
+- Module for Azure Windows/Linux VMs.
+- Support for data disks.
+- Support for public IPs.
+- Extension for MSSQL.
+- Extension for Ansible Inventory
+
+# Version 1.0.1
+
+- Enhancement the SQL documentation.
+
 

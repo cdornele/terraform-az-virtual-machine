@@ -46,7 +46,7 @@ resource "azurerm_mssql_virtual_machine" "this" {
   }
 
   sql_instance {
-    collation                           = lookup(var.sql_settings, "collation", "SQL_Latin1_General_CP1_CI_AS")
+    collation                           = lookup(var.sql_settings, "sql_collation", "SQL_Latin1_General_CP1_CI_AS")
     instant_file_initialization_enabled = lookup(var.sql_settings, "instant_file_initialization_enabled", false)
     lock_pages_in_memory_enabled        = lookup(var.sql_settings, "lock_pages_in_memory_enabled", false)
     max_dop                             = lookup(var.sql_settings, "max_dop", 0)
