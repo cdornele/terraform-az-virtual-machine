@@ -2,7 +2,7 @@
 version: 1
 
 # module version
-module_version: 1.0.0
+module_version: 1.0.1
 
 # tests
 tests:

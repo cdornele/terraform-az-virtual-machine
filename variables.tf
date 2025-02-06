@@ -180,7 +180,7 @@ variable "vm_imagePlanPublisher" {
 variable "vm_disable_password_authentication" {
   description = "Disable password authentication"
   type        = bool
-  default     = false
+  default     = true
 }
 
 variable "vm_authentication_adminUsername" {
