@@ -1,28 +1,3 @@
 {
-	"results": [
-		{
-			"rule_id": "AVD-AZU-0039",
-			"long_id": "azure-compute-disable-password-authentication",
-			"rule_description": "Password authentication should be disabled on Azure virtual machines",
-			"rule_provider": "azure",
-			"rule_service": "compute",
-			"impact": "Using password authentication is less secure that ssh keys may result in compromised servers",
-			"resolution": "Use ssh authentication for virtual machines",
-			"links": [
-				"https://aquasecurity.github.io/tfsec/v1.28.13/checks/azure/compute/disable-password-authentication/",
-				"https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine#disable_password_authentication",
-				"https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine#disable_password_authentication"
-			],
-			"description": "Linux virtual machine allows password authentication.",
-			"severity": "HIGH",
-			"warning": false,
-			"status": 0,
-			"resource": "azurerm_linux_virtual_machine.vm-linux[0]",
-			"location": {
-				"filename": "/home/runner/work/terraform-az-virtual-machine/terraform-az-virtual-machine/main.tf",
-				"start_line": 150,
-				"end_line": 150
-			}
-		}
-	]
+	"results": []
 }

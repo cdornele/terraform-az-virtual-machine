@@ -52,7 +52,7 @@
 | <a name="input_vm_custom_imageId"></a> [vm\_custom\_imageId](#input\_vm\_custom\_imageId) | The ID of the custom image to use for the virtual machine. | `string` | `null` | no |
 | <a name="input_vm_dataDisks"></a> [vm\_dataDisks](#input\_vm\_dataDisks) | A list of data disks to attach to the virtual machine. | `list` | `[]` | no |
 | <a name="input_vm_devops_ssh_key"></a> [vm\_devops\_ssh\_key](#input\_vm\_devops\_ssh\_key) | SSH key for DevOps access | `string` | `null` | no |
-| <a name="input_vm_disable_password_authentication"></a> [vm\_disable\_password\_authentication](#input\_vm\_disable\_password\_authentication) | Disable password authentication | `bool` | `false` | no |
+| <a name="input_vm_disable_password_authentication"></a> [vm\_disable\_password\_authentication](#input\_vm\_disable\_password\_authentication) | Disable password authentication | `bool` | `true` | no |
 | <a name="input_vm_dns_servers"></a> [vm\_dns\_servers](#input\_vm\_dns\_servers) | The DNS servers for the virtual machine. | `list(string)` | `[]` | no |
 | <a name="input_vm_enableAcceleratedNetworking"></a> [vm\_enableAcceleratedNetworking](#input\_vm\_enableAcceleratedNetworking) | Enable Accelerated Networking on the virtual machine. | `bool` | `false` | no |
 | <a name="input_vm_enableIpForwarding"></a> [vm\_enableIpForwarding](#input\_vm\_enableIpForwarding) | Enable IP Forwarding on the virtual machine. | `bool` | `false` | no |
