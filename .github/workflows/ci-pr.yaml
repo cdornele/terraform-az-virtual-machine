@@ -1,0 +1,49 @@
+name: Terraform Pull Request CI
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
+      - master
+
+permissions:
+  id-token: write # This is required for requesting the JWT
+  contents: write 
+  pull-requests: write  # This is required for commenting on PRs
+
+jobs:
+    Validate: 
+        name: Validate Terraform code
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                ref: ${{ github.event.pull_request.head.ref }}
+            - run: git config --global user.name "${{ inputs.gh_actor_name }}"
+            - run: git config --global user.email "${{ inputs.gh_actor_email }}"
+
+            - name: Install TFSec
+              run: |
+                curl -sSL https://github.com/aquasecurity/tfsec/releases/latest/download/tfsec-linux-amd64 -o tfsec
+                chmod +x tfsec
+                sudo mv tfsec /usr/local/bin/tfsec
+                tfsec --version
+
+            - name: Run TFSec
+              continue-on-error: true
+              run: |
+                tfsec --format json --out tfsec-results.json
+                cat tfsec-results.json
+
+            - name: Render terraform docs and push changes back to PR
+              uses: terraform-docs/gh-actions@main
+              with:
+                working-dir: .
+                recursive: true
+                recursive-path: sub-modules
+                output-file: README.md
+                output-method: inject
+                git-push: "true"

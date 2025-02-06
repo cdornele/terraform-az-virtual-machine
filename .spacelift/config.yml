@@ -1,0 +1,10 @@
+# version
+version: 1
+
+# module version
+module_version: 1.0.0
+
+# tests
+tests:
+ - name: Single Azure Event Hub (Private)
+   project_root: examples/single-event-hub-namespace-private
