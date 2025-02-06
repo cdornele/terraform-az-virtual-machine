@@ -83,6 +83,10 @@
 
 | Name | Description |
 |------|-------------|
-| <a name="output_linux_vm_name"></a> [linux\_vm\_name](#output\_linux\_vm\_name) | Linux VMs name |
-| <a name="output_linux_vm_public_ips"></a> [linux\_vm\_public\_ips](#output\_linux\_vm\_public\_ips) | Public IP's map for the all windows Virtual Machines |
+| <a name="output_linux_vm_info"></a> [linux\_vm\_info](#output\_linux\_vm\_info) | Linux VMs information |
+| <a name="output_linux_vm_private_ips"></a> [linux\_vm\_private\_ips](#output\_linux\_vm\_private\_ips) | Public IP's map for the all linux Virtual Machines |
+| <a name="output_linux_vm_public_ips"></a> [linux\_vm\_public\_ips](#output\_linux\_vm\_public\_ips) | Public IP's map for the all linux Virtual Machines |
+| <a name="output_windows_vm_info"></a> [windows\_vm\_info](#output\_windows\_vm\_info) | Windows VMs information |
+| <a name="output_windows_vm_private_ips"></a> [windows\_vm\_private\_ips](#output\_windows\_vm\_private\_ips) | Public IP's map for the all Windows Virtual Machines |
+| <a name="output_windows_vm_public_ips"></a> [windows\_vm\_public\_ips](#output\_windows\_vm\_public\_ips) | Public IP's map for the all Windows Virtual Machines |
 <!-- END_TF_DOCS -->
