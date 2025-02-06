@@ -1,0 +1,12 @@
+# version
+version: 1
+
+# module version
+module_version: 1.0.0
+
+# tests
+tests:
+ - name: Single Azure Windows VM
+   project_root: examples/single-windows-vm
+ - name: Single Azure Linux VM
+   project_root: examples/single-windows-vm
