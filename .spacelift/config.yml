@@ -6,5 +6,7 @@ module_version: 1.0.0
 
 # tests
 tests:
- - name: Single Azure Event Hub (Private)
-   project_root: examples/single-event-hub-namespace-private
+ - name: Single Azure Windows VM
+   project_root: examples/single-windows-vm
+ - name: Single Azure Linux VM
+   project_root: examples/single-windows-vm
